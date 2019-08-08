@@ -22,4 +22,7 @@
     <screenshot>https://tux4kids.alioth.debian.org/tuxmath/screenshots/menu.jpg</screenshot>
   </screenshots>
   <updatecontact>jwrdegoede_at_fedoraproject.org</updatecontact>
+  <releases>
+    <release version="2.0.3" date="2013-12-02"/>
+  </releases>
 </component>
