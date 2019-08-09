@@ -17,9 +17,16 @@
   </description>
   <url type="homepage">https://tux4kids.alioth.debian.org/tuxmath/index.php</url>
   <screenshots>
-    <screenshot type="default">https://tux4kids.alioth.debian.org/tuxmath/screenshots/help.jpg</screenshot>
-    <screenshot>https://tux4kids.alioth.debian.org/tuxmath/screenshots/game_play.jpg</screenshot>
-    <screenshot>https://tux4kids.alioth.debian.org/tuxmath/screenshots/menu.jpg</screenshot>
+    <screenshot>https://github.com/flathub/com.tux4kids.tuxmath/raw/baf090f14fb397bbd0b6c7702f07820277694e10/screenshots/help.jpg</screenshot>
+    <screenshot type="default">https://github.com/flathub/com.tux4kids.tuxmath/raw/baf090f14fb397bbd0b6c7702f07820277694e10/screenshots/game_play.jpg</screenshot>
+    <screenshot>https://github.com/flathub/com.tux4kids.tuxmath/raw/baf090f14fb397bbd0b6c7702f07820277694e10/screenshots/menu.jpg</screenshot>
   </screenshots>
   <updatecontact>jwrdegoede_at_fedoraproject.org</updatecontact>
+  <releases>
+    <release version="2.0.3" date="2013-12-02"/>
+  </releases>
+  <content_rating type="oars-1.1">
+    <content_attribute id="violence-cartoon">mild</content_attribute>
+    <content_attribute id="social-chat">mild</content_attribute>
+  </content_rating>
 </component>
