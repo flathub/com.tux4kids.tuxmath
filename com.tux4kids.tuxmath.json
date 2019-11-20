@@ -1,7 +1,7 @@
 {
     "app-id": "com.tux4kids.tuxmath",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "1.6",
+    "runtime-version": "19.08",
     "sdk": "org.freedesktop.Sdk",
     "finish-args": [
         "--device=dri",
@@ -42,6 +42,10 @@
                 {
                     "type": "patch",
                     "path": "t4kcommon-libpng16.patch"
+                },
+                {
+                    "type": "patch",
+                    "path": "t4kcommon-libxml2-frame-count.patch"
                 },
                 {
                     "type": "script",
