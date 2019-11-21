@@ -15,7 +15,7 @@
      school tournaments and similar competitions.
     </p>
   </description>
-  <url type="homepage">https://tux4kids.alioth.debian.org/tuxmath/index.php</url>
+  <url type="homepage">https://github.com/tux4kids/tuxmath</url>
   <screenshots>
     <screenshot>https://github.com/flathub/com.tux4kids.tuxmath/raw/baf090f14fb397bbd0b6c7702f07820277694e10/screenshots/help.jpg</screenshot>
     <screenshot type="default">https://github.com/flathub/com.tux4kids.tuxmath/raw/baf090f14fb397bbd0b6c7702f07820277694e10/screenshots/game_play.jpg</screenshot>
