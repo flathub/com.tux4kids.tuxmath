@@ -1,7 +1,7 @@
 {
     "app-id": "com.tux4kids.tuxmath",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "19.08",
+    "runtime-version": "21.08",
     "sdk": "org.freedesktop.Sdk",
     "finish-args": [
         "--device=dri",
@@ -33,6 +33,10 @@
         {
             "name": "t4kcommon",
             "rm-configure": true,
+            "build-options": {
+                "cflags": "-fcommon",
+                "cxxflags": "-fcommon"
+            },
             "sources": [
                 {
                     "type": "archive",
@@ -59,6 +63,10 @@
         {
             "name": "tuxmath",
             "rm-configure": true,
+            "build-options": {
+                "cflags": "-fcommon",
+                "cxxflags": "-fcommon"
+            },
             "sources": [
                 {
                     "type": "archive",
