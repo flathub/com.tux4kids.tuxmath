@@ -1,7 +1,7 @@
 {
     "app-id": "com.tux4kids.tuxmath",
     "runtime": "org.freedesktop.Platform",
-    "runtime-version": "23.08",
+    "runtime-version": "25.08",
     "sdk": "org.freedesktop.Sdk",
     "finish-args": [
         "--device=dri",
@@ -20,8 +20,10 @@
         "/include",
         "/lib/pkgconfig",
         "/share/aclocal",
+        "/share/doc",
         "/share/man",
-        "*.la", "*.a"
+        "*.la",
+        "*.a"
     ],
     "modules": [
         "shared-modules/SDL/SDL-1.2.15.json",
@@ -34,8 +36,8 @@
             "name": "t4kcommon",
             "rm-configure": true,
             "build-options": {
-                "cflags": "-fcommon",
-                "cxxflags": "-fcommon"
+                "cflags": "-fcommon -Wno-error=implicit-function-declaration -Wno-error=incompatible-pointer-types -std=gnu17",
+                "cxxflags": "-fcommon -Wno-error=implicit-function-declaration -Wno-error=incompatible-pointer-types -std=gnu17"
             },
             "sources": [
                 {
@@ -64,8 +66,8 @@
             "name": "tuxmath",
             "rm-configure": true,
             "build-options": {
-                "cflags": "-fcommon",
-                "cxxflags": "-fcommon"
+                "cflags": "-fcommon -Wno-error=implicit-function-declaration -Wno-error=incompatible-pointer-types -std=gnu17",
+                "cxxflags": "-fcommon -Wno-error=implicit-function-declaration -Wno-error=incompatible-pointer-types -std=gnu17"
             },
             "sources": [
                 {
@@ -90,14 +92,10 @@
                 }
             ],
             "post-install": [
-                "mkdir /app/share/appdata",
-                "cp tuxmath.appdata.xml /app/share/appdata",
-                "mkdir /app/share/applications",
-                "cp tuxmath.desktop /app/share/applications",
-                "mkdir -p /app/share/icons/hicolor/48x48/apps",
-                "cp data/images/icons/icon.png /app/share/icons/hicolor/48x48/apps/tuxmath.png",
-                "mkdir -p /app/share/icons/hicolor/scalable/apps",
-                "cp data/images/icons/tuxmath.svg /app/share/icons/hicolor/scalable/apps",
+                "install -Dm644 tuxmath.appdata.xml -t /app/share/appdata/",
+                "install -Dm644 tuxmath.desktop -t /app/share/applications/",
+                "install -Dm644 data/images/icons/icon.png /app/share/icons/hicolor/48x48/apps/tuxmath.png",
+                "install -Dm644 data/images/icons/tuxmath.svg -t /app/share/icons/hicolor/scalable/apps/",
                 "sed -i 's/height=\"117\"/height=\"132\"/' /app/share/icons/hicolor/scalable/apps/tuxmath.svg"
             ]
         }

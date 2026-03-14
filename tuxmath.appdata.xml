@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<component type="desktop">
+<component type="desktop-application">
   <id>tuxmath.desktop</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>GPL-3.0+ and CC-BY and OFL-1.1</project_license>
@@ -16,12 +16,24 @@
     </p>
   </description>
   <url type="homepage">https://github.com/tux4kids/tuxmath</url>
+  <url type="bugtracker">https://github.com/tux4kids/tuxmath/issues</url>
+  <url type="vcs-browser">https://github.com/tux4kids/tuxmath</url>
+  <launchable type="desktop-id">tuxmath.desktop</launchable>
+  <developer id="com.tux4kids">
+    <name>tux4kids</name>
+  </developer>
   <screenshots>
-    <screenshot>https://github.com/flathub/com.tux4kids.tuxmath/raw/baf090f14fb397bbd0b6c7702f07820277694e10/screenshots/help.jpg</screenshot>
-    <screenshot type="default">https://github.com/flathub/com.tux4kids.tuxmath/raw/baf090f14fb397bbd0b6c7702f07820277694e10/screenshots/game_play.jpg</screenshot>
-    <screenshot>https://github.com/flathub/com.tux4kids.tuxmath/raw/baf090f14fb397bbd0b6c7702f07820277694e10/screenshots/menu.jpg</screenshot>
+    <screenshot type="default">
+      <image>https://github.com/flathub/com.tux4kids.tuxmath/raw/baf090f14fb397bbd0b6c7702f07820277694e10/screenshots/game_play.jpg</image>
+    </screenshot>
+    <screenshot >
+      <image>https://github.com/flathub/com.tux4kids.tuxmath/raw/baf090f14fb397bbd0b6c7702f07820277694e10/screenshots/help.jpg</image>
+    </screenshot>
+    <screenshot>
+      <image>https://github.com/flathub/com.tux4kids.tuxmath/raw/baf090f14fb397bbd0b6c7702f07820277694e10/screenshots/menu.jpg</image>
+    </screenshot>
   </screenshots>
-  <updatecontact>jwrdegoede_at_fedoraproject.org</updatecontact>
+  <update_contact>jwrdegoede_at_fedoraproject.org</update_contact>
   <releases>
     <release version="2.0.3" date="2013-12-02"/>
   </releases>
